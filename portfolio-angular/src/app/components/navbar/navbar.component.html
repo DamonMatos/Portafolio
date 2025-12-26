@@ -1,0 +1,51 @@
+
+<nav class="fixed top-0 left-0 w-full bg-white text-gray-600 z-[1000] shadow-sm">
+
+    <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <img
+                src="assets/images/profile.jpg"
+                alt="Victor Matos"
+                class="w-10 h-10 rounded-full object-cover border border-gray-300"
+            />
+            <!-- Logo -->
+                <span class="text-xl font-bold tracking-wide">
+                    VICTOR MATOS
+                </span>
+        </div>
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex gap-8 text-sm font-medium">
+                <li><a routerLink="/" routerLinkActive="text-black"
+                        class="hover:text-purple-400 transition">INICIO</a></li>
+                <li><a routerLink="/about" routerLinkActive="text-black"
+                        class="hover:text-purple-400 transition">ABOUT</a></li>
+                <li><a routerLink="/projects" routerLinkActive="text-black"
+                        class="hover:text-purple-400 transition">PROJECTS</a></li>
+                <li><a routerLink="/contact" routerLinkActive="text-black"
+                        class="hover:text-purple-400 transition">CONTACT</a></li>
+            </ul>
+
+            <!-- Mobile Button -->
+            <button class="md:hidden text-2xl focus:outline-none" (click)="toggleMenu()"> ☰ </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden fixed top-[90px] left-0 w-full z-[999] bg-white shadow-lg overflow-hidden transition-all duration-500 ease-in-out"
+        [ngClass]="menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'">
+        <ul class="flex flex-col bg-white-800 px-6 py-4 space-y-4 text-sm">
+            <li>
+                <a routerLink="/" (click)="closeMenu()" class="hover:text-purple-400">INICIO</a>
+            </li>
+            <li>
+                <a routerLink="/about" (click)="closeMenu()" class="hover:text-purple-400">ABOUT</a>
+            </li>
+            <li>
+                <a routerLink="/projects" (click)="closeMenu()" class="hover:text-purple-400">PROJECTS</a>
+            </li>
+            <li>
+                <a routerLink="/contact" (click)="closeMenu()" class="hover:text-purple-400">CONTACT</a>
+            </li>
+        </ul>
+    </div> 
+</nav>
