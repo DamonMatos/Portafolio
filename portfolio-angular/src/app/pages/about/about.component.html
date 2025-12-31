@@ -1,1 +1,101 @@
-<p>about works!</p>
+<section class="pt-24 max-w-7xl mx-auto px-4">
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+        <!-- Title -->
+        <h6 class="text-4xl md:text-6xl font-semibold tracking-wide text-gray-900 mb-4 mt-2">
+            ACERCA DE MI<!-- ABOUT ME -->
+        </h6>
+
+        <div class="mx-auto mt-0 mb-3 h-2 w-20 bg-purple-600 rounded-full"></div>
+        <!-- Subtitle -->
+        <p class="max-w-2xl text-gray-700 text-base md:text-lg mb-10">
+            Aquí encontrarás más información sobre mí, lo que hago y mis habilidades 
+            actuales principalmente en términos de programación y tecnología.
+        </p>
+
+    </div>
+</section>
+
+
+<section class="bg-[#fafafa] py-28">
+    <div class="max-w-6xl mx-auto px-6 font-inter">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+
+        <!-- LEFT CONTENT -->
+        <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+            ¡Conóceme!
+            </h2>
+
+            <div class="space-y-6 text-gray-600 leading-relaxed text-[15px]">
+            <p>
+                Soy un <span class="font-semibold text-gray-800">
+                desarrollador web especializado en frontend
+                </span>
+                <!-- building and managing the Front-end of Websites and Web Applications
+                that leads to the success of the overall product. Check out some of -->
+
+                que crea y gestiona el frontend de sitios web y aplicaciones web, 
+                lo que contribuye al éxito del producto final. 
+                Consulta algunos de mis trabajos en la sección de 
+                <span class="font-semibold">Proyectos</span>.
+            
+            </p>
+            <p>
+                También me gusta compartir contenido relacionado con lo que he aprendido a lo largo
+                de los años en <span class="font-semibold">desarrollo web</span> para que pueda ayudar a otras personas de la comunidad 
+                de desarrollo.
+            </p>
+
+            <!-- <p>
+                I also like sharing content related to the stuff that I have learned
+                over the years in <span class="font-semibold">Web Development</span>
+                so it can help other people of the Dev Community.
+            </p> -->
+
+            <p>
+                Feel free to Connect or Follow me on my
+                <a href="#" class="text-purple-600 font-medium hover:underline">
+                Linkedin
+                </a>
+                and
+                <a href="#" class="text-purple-600 font-medium hover:underline">
+                Instagram
+                </a>
+                where I post useful content related to Web Development and Programming
+            </p>
+
+            <p>
+                I'm open to
+                <span class="font-semibold">Job</span>
+                opportunities where I can contribute, learn and grow. If you have a
+                good opportunity that matches my skills and experience then don't
+                hesitate to
+                <a href="#" class="font-semibold text-purple-600 hover:underline">
+                contact
+                </a>
+                me.
+            </p>
+            </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+            My Skills
+            </h2>
+
+            <div class="flex flex-wrap gap-4">
+                @for (skill of skills; track $index) {
+                    <span id="skill" class="bg-gray-200 text-gray-700 px-4 py-2
+                        rounded-md text-sm font-medium">
+                        {{ skill }}
+                    </span>
+                }
+            </div>
+        </div>
+
+        </div>
+    </div>
+</section>
+

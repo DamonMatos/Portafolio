@@ -1,1 +1,43 @@
-<p>home works!</p>
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+
+    <img
+        src="assets/images/hero.jpg" 
+        fill
+        priority
+        class="absolute inset-0 w-full h-full object-cover"
+        alt="Hero background"
+    />  
+
+    
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center px-4 max-w-4xl">
+        <!-- Title -->
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-wide">
+        {{ displayedText }}
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="max-w-4xl text-white text-base md:text-lg mb-10">
+        Ingeniero de Sistemas enfocado en el desarrollo de aplicaciones web modernas
+        y escalables que aportan valor real.
+        </p>
+
+        <!-- Button -->
+        <a
+        routerLink="/projects"
+        class="bg-purple-600 hover:bg-purple-700 text-white
+                px-10 py-4 rounded-md font-semibold tracking-widest
+                transition duration-300 shadow-lg">
+        PROYECTOS
+        </a>
+
+    </div>
+
+    </section>
+
+    <app-about></app-about>
+

@@ -8,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+    skills = [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Angular 20',
+      'GIT',
+      'Github',
+      '.NET Core',
+      'C#',
+      'SQL Server',
+    ];
+
 }
