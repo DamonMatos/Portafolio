@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  onFormSubmit() {
+    console.log("Form submitted");
+  }
+
 }

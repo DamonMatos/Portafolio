@@ -12,7 +12,7 @@ export class AboutComponent {
       'HTML',
       'CSS',
       'JavaScript',
-      'Angular 20',
+      'Angular',
       'GIT',
       'Github',
       '.NET Core',

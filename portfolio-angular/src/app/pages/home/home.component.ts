@@ -2,9 +2,11 @@ import { Inject, OnInit } from '@angular/core';
 import { Component, AfterViewInit, ElementRef, QueryList, ViewChildren,PLATFORM_ID } from '@angular/core';
 //import { isPlatformBrowser } from '@angular/common';
 import { AboutComponent } from '../about/about.component';
+import { ContactComponent } from '../contact/contact.component';
+import { ProjectsComponent } from "../projects/projects.component";
 @Component({
   selector: 'app-home',
-  imports: [AboutComponent],
+  imports: [AboutComponent, ContactComponent, ProjectsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

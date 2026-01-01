@@ -1,1 +1,56 @@
-<p>projects works!</p>
+<section class="pt-24 max-w-7xl mx-auto px-4">
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+        <!-- Title -->
+        <h6 class="text-4xl md:text-6xl font-semibold tracking-wide text-gray-900 mb-4 mt-2">
+            PROYECTOS
+        </h6>
+
+        <div class="mx-auto mt-0 mb-3 h-2 w-20 bg-purple-600 rounded-full"></div>
+        <!-- Subtitle -->
+        <p class="max-w-2xl text-gray-700 text-base md:text-lg mb-10">
+            Aquí encontrará algunos de los proyectos personales y de clientes que he creado, 
+            y cada proyecto contiene su propio estudio de caso.
+        </p>
+
+    </div>
+</section>
+
+<section class="bg-[#fafafa] py-28">
+    <div class="max-w-6xl mx-auto px-6 font-inter">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+
+        @for (item of ListaProyectos; track $index) {
+        <!-- LEFT CONTENT -->
+        <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+            {{ item.nombre }}
+            </h2>
+
+            <div class="space-y-6 text-gray-600 leading-relaxed text-[15px]">
+            <p>
+                {{ item.descripcion }}
+            </p>
+
+            </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div>   
+            <div class="mb-2">
+                <a class="block group">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img 
+                            [src]="item.imagen" 
+                            [alt]="item.nombre" 
+                            class="w-full h-70 object-cover transform group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                        />
+                    </div>
+                    
+                </a>
+            </div>
+        </div>
+        }
+        </div>
+    </div>
+</section>
